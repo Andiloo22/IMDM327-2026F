@@ -71,11 +71,23 @@ public class ThreeBody : MonoBehaviour
     {
         // Loop for N-body gravity
         // How should we design the loop?
-        for (int i = 0; i < numberOfSphere; i++)
+
+        // 00. Initialize the acceleration for each body to zero at the start of each frame
+       for (int i = 0; i < numberOfSphere; i++)
         {
             // Something
         }
-
+        // 01. Loop through each body to calculate the gravitational forces acting on it
+        for (int i = 0; i < numberOfSphere; i++)
+        {
+            // Something
+            // for ( int j...)
+        }
+        // 02. Loop through each body to update its velocity and position based on the calculated acceleration
+       for (int i = 0; i < numberOfSphere; i++)
+        {
+            // Something
+        }
     }
 
     // Gravity Fuction to finish
