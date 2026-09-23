@@ -2,7 +2,7 @@
 // Use CSV or JSON to load data into the simulation. Both formats are supported, but they use different data types. 
 // The CSV format uses a struct, while the JSON format uses a class. This script demonstrates how to load both formats and access their data.
 using UnityEngine;
-public class SolarSystemStarter : MonoBehaviour
+public class SolarSystem : MonoBehaviour
 {
     // These components can be attached independently.
     DataCSV solarCSV;
@@ -52,7 +52,7 @@ public class SolarSystemStarter : MonoBehaviour
         {
             // Our gameobjects are created here:
             planetProperties[i] = new PlanetProperty();
-            planetProperties[i].planet = GameObject.CreatePrimitive(PrimitiveType.Sphere); 
+            planetProperties[i].planet = GameObject.CreatePrimitive(PrimitiveType.Sphere);
         }
 
         // Apply the loaded data to the simulation. This is where you would set up your bodies in the scene based on the loaded data.
@@ -74,7 +74,7 @@ public class SolarSystemStarter : MonoBehaviour
         // How should we design the loop?
 
         // 00. Initialize the acceleration for each body to zero at the start of each frame
-       for (int i = 0; i < numberOfSphere; i++)
+        for (int i = 0; i < numberOfSphere; i++)
         {
             // ***WRITE YOUR CODE HERE***
         }
@@ -85,7 +85,7 @@ public class SolarSystemStarter : MonoBehaviour
             // for ( int j...)
         }
         // 02. Loop through each body to update its velocity and position based on the calculated acceleration
-       for (int i = 0; i < numberOfSphere; i++)
+        for (int i = 0; i < numberOfSphere; i++)
         {
             // ***WRITE YOUR CODE HERE***
 
