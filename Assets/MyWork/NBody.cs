@@ -14,7 +14,7 @@ public class NBody : MonoBehaviour
     public float conjoinFloat = 100f;
     public float softening = 100f;
     BodyProperty[] bp;
-    private int numberOfSphere = 3;
+    private int numberOfSphere = 100;
     class BodyProperty // why struct?
     {                   // https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/choosing-between-class-and-struct
         public GameObject body;
